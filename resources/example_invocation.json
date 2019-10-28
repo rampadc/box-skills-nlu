@@ -1,0 +1,76 @@
+{
+  "type": "skill_invocation",
+  "skill": {
+    "api_key": "jlv2zzj4ruh5qhzhow6otf3v14iymwk1",
+    "id": 900491,
+    "name": "cn-nlu-skill",
+    "type": "skill"
+  },
+  "token": {
+    "read": {
+      "access_token": "1!HgbgbhF6pe4-v4SuqKXU4jo17AcelZcahIrPY4qhq4BmxVoEpDtY1E7Gbq6rTnIPlm8VqV25M4E_lC3IPU1jL9nLhWzrhdv8hR4aAoC9nREdcqrmyb4ExIlzgfJuCulaDdPbwNqYU2P40QarwJkEjIQJFx-ptqKBtSqfEBnD3mkHajgJrt97rSCdeqRRptpC-R4SPex4eiednyuNiZkVxE71amSUhDhchT_y9dFQL6qr85J_9NWFHVx8uzXhEQ7me1BIGSX4dim31svPZZ_0cDeSWhsxKtsMlcYVKEGdiujvBfGynlX6ucA83DSDkz7lrMiKrGPw-odrII0R53AUUS2Gf2mSa5kFnMgqLZ5voVbfqPnAq2XQBgmVMXVwm108PjiB4-eBGyyu-NFPYQlOuQw1AXvWd6iMfVdrfTqIkKnzNCPcTIg.",
+      "expires_in": 1572066775,
+      "restricted_to": "[{\"scope\":\"gcm\"},{\"scope\":\"item_read\",\"object_id\":545901644053,\"object_type\":\"file\"}]",
+      "token_type": "bearer"
+    },
+    "write": {
+      "access_token": "1!pDhjU39sQAobMBIj_JAr46KgMYcVFRiTyhIVAtH1Cg6VhJpth34gETjb8lS8h9jtCll28hlKvVSBsbwhu_OlOfHKG8dzgdfFPc5pQTrI_FbBsg7y1FDHJee_ELmv93rNQr1P5IkevlNdGg62AlIVLQgZ1GbIMNuiOWoM5pbu2_QmT3LZ--ZOeWxVMj9Fhma-GZVvWWNoxwLhjm8W0EtI3zS6lG80Njj5NLF4N2BqCD1LUs0tELTgfp4SqftIyB05-WGqD9y05L_KcTjiasF70W0Lu0UYGbbjNvVh7_2adYf5wfYnqUquphpPCZs9zd0eC9GRHmJQrfXF-41jnSJKfmv7nIUvKD_iUVK6qatZc4iqEDQzlr-pMlPoDpnH4QrDbQvGQrfwHj-9PcRCq04TKUdm4zSv78gmAgc5RNgZ8TPIyTszMd1B37txfPOBzzbPeudJTVJrqLEcMLC9wbYSlefjdwdjjQzwfQ_2310xFqnw",
+      "expires_in": 1572066776,
+      "restricted_to": "[{\"scope\":\"gcm\"},{\"scope\":\"item_upload\",\"object_id\":545901644053,\"object_type\":\"file\"},{\"scope\":\"manage_skill_invocations\"}]",
+      "token_type": "bearer"
+    }
+  },
+  "status": {
+    "state": "invoked",
+    "message": "",
+    "error_code": "",
+    "additional_info": ""
+  },
+  "id": "1114129283_85626420",
+  "created_at": "2019-10-24T22:12:55-07:00",
+  "trigger": "SKILL_APP_TEST_EVENT",
+  "enterprise": {
+    "type": "enterprise",
+    "id": "267390949",
+    "name": ""
+  },
+  "source": {
+    "id": 545901644053,
+    "type": "file",
+    "file_version": {
+      "id": 578606265253
+    },
+    "name": "nlu-example.txt",
+    "owner_enterprise_id": 267390949,
+    "parent": {
+      "id": 90895678899
+    },
+    "sequence_id": 0,
+    "size": 3998
+  },
+  "event": {
+    "event_id": "1114129283",
+    "created_at": "2019-10-24T22:12:55-07:00",
+    "created_by": {
+      "type": "user",
+      "id": 10391568949,
+      "name": "Cong Nguyen",
+      "login": "devxcong@outlook.com"
+    },
+    "source": {
+      "id": 545901644053,
+      "type": "file",
+      "file_version": {
+        "id": 578606265253
+      },
+      "name": "nlu-example.txt",
+      "owner_enterprise_id": 267390949,
+      "parent": {
+        "id": 90895678899
+      },
+      "sequence_id": 0,
+      "size": 3998
+    }
+  },
+  "parameters": {}
+}

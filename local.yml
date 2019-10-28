@@ -1,0 +1,6 @@
+---
+applications:
+- name: box-skills-demo
+  routes:
+  - route: box-skills-demo.au-syd.mybluemix.net/
+  
