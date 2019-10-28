@@ -31,14 +31,19 @@ router.post('/nlu/invoke', function(req, res, next) {
 
   // Convert the entries into a Keyword Card
   const card = writer.createTopicsCard(entries);
-  // Write the card as metadata to the file
+
+  console.log(card);
+
   writer.saveDataCards([card]).then(() => {
-    console.log('Done');
-    res.status(200).send({});
+    res.status(200).send({
+      message: 'Done'
+    });
   }).catch(error => {
-    console.error(error);
-    res.status(500).send(error);
-  });  
+    console.log(error);
+    res.status(error['statusCode']).send({
+      message: error
+    });
+  })
 });
 
 module.exports = router;
