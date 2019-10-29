@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
   res.status(200).send('Use POST/skills/*/invoke for Box skills');
 });
 
-router.post('/nlu/invoke', function(req, res, next) {
+router.post('/nlu/invoke', async function(req, res, next) {
   const event = JSON.stringify(req.body);
   const reader = new FilesReader(event);
 
@@ -32,18 +32,16 @@ router.post('/nlu/invoke', function(req, res, next) {
   // Convert the entries into a Keyword Card
   const card = writer.createTopicsCard(entries);
 
-  console.log(card);
+  await writer.saveProcessingCard();
 
-  writer.saveDataCards([card]).then(() => {
-    res.status(200).send({
-      message: 'Done'
-    });
-  }).catch(error => {
-    console.log(error);
-    res.status(error['statusCode']).send({
-      message: error
-    });
-  })
+  try {
+    await writer.saveDataCards([card]);
+  } catch (error) {
+    console.log(error.statusCode);
+    console.error(error);
+  } finally {
+    res.status(200).send('Box Skills added.');
+  }
 });
 
 module.exports = router;
